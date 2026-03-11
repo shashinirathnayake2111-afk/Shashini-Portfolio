@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashini Rathnayake | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Shashini Rathnayake, a Software Engineer and UI/UX Designer specialized in creating elegant and efficient web solutions.">
+    <meta name="keywords"
+        content="Shashini Rathnayake, Portfolio, Software Engineer, UI/UX Designer, Web Developer, Sri Lanka, Galle">
+    <meta name="author" content="Shashini Rathnayake">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shashini.me/"> <!-- Recommended placeholder -->
+    <meta property="og:title" content="Shashini Rathnayake | Portfolio">
+    <meta property="og:description"
+        content="Software Engineer & UI/UX Designer passionate about crafting elegant web solutions.">
+    <meta property="og:image" content="img/mee.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://shashini.me/">
+    <meta name="twitter:title" content="Shashini Rathnayake | Portfolio">
+    <meta name="twitter:description"
+        content="Software Engineer & UI/UX Designer passionate about crafting elegant web solutions.">
+    <meta name="twitter:image" content="img/mee.png">
+
+    <link rel="icon" type="image/png" href="img/aaii.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Success Notification -->
+    <div class="success-toast" id="successToast">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <!-- Case Study Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="modal-close" id="closeModal"><i class="fas fa-times"></i></button>
+            <div class="modal-grid">
+                <div class="modal-image-side">
+                    <img id="modalImg" src="" alt="Project Detail">
+                </div>
+                <div class="modal-text-side">
+                    <h2 id="modalTitle">Project Title</h2>
+                    <div class="modal-tags" id="modalTags"></div>
+                    <div class="modal-info">
+                        <div class="info-block">
+                            <h4><i class="fas fa-exclamation-circle"></i> The Problem</h4>
+                            <p id="modalProblem">Detailed background on the challenges faced.</p>
+                        </div>
+                        <div class="info-block">
+                            <h4><i class="fas fa-lightbulb"></i> The Solution</h4>
+                            <p id="modalSolution">How the project addressed the problem effectively.</p>
+                        </div>
+                        <div class="info-block" id="modalColorsBlock">
+                            <h4><i class="fas fa-palette"></i> Design Palette</h4>
+                            <div class="color-palette" id="modalColors"></div>
+                        </div>
+                    </div>
+                    <div class="modal-actions" id="modalActions">
+                        <!-- Dynamically populated buttons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav id="navbar">
+        <div class="navigation-bar">
+            <div class="logo"><img src="img/Logo (1).png" alt="Logo"></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1 class="hero-title">Shashini Rathnayake</h1>
+            <h2 class="hero-subtitle">Hello<span class="wave">👋</span> I'm a <span id="typed"></span></h2>
+            <p class="hero-description">
+                Passionate about creating engaging digital experiences with modern technologies.
+                Specialized in responsive web development, user interface design, and database optimization.
+            </p>
+        </div>
+        <img src="img/mee.png" alt="Hero Image" class="hero-image reveal-right">
+        <div class="social">
+            <div class="social-links">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1AnMxAAe84/" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.behance.net/shashinirathnayke" target="_blank"><i
+                            class="fab fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/shashini-rathnayake-628983326/" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="#portfolio" class="btn btn-secondary">
+                <i class="fas fa-code"></i> View My Work
+            </a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-wrapper">
+            <div class="about-glass-card">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-wrapper reveal-left">
+                        <div class="image-glow"></div>
+                        <div class="image-container">
+                            <img src="img/hi.png" alt="Shashini Rathnayake">
+                        </div>
+                    </div>
+                    <div class="about-text-content reveal-right">
+                        <p class="about-subheading">Passionate Developer & Creative Thinker</p>
+                        <h3 class="about-name">Shashini Rathnayake</h3>
+                        <div class="about-description">
+                            <p>
+                                I'm a dedicated <b>Software Engineer</b> and <b>UI/UX Designer</b> with a passion for
+                                bridging the gap between functional code and aesthetic design. With a strong
+                                foundation in <b>full-stack development</b>, I specialize in building robust,
+                                high-performance solutions while crafting intuitive, user-centric interfaces.
+                            </p>
+                            <p>
+                                My approach combines technical precision with creative problem-solving. Whether
+                                I'm architecting complex systems or designing modern digital experiences, I
+                                focus on delivering excellence that is both efficient and visually stunning.
+                            </p>
+                        </div>
+
+                        <div class="about-stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-value">12+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-value">1+</span>
+                                    <span class="stat-label">Year Exp.</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                                <div class="stat-info">
+                                    <span class="stat-value">6+</span>
+                                    <span class="stat-label">Certificates</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-actions">
+                            <a href="#contact" class="about-btn">
+                                <span>Let's Work Together</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="services-title">My Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">💻</div>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">
+                    Building responsive and user-friendly websites using modern technologies like HTML5, CSS3,
+                    JavaScript, and React.js.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3 class="service-title">UI/UX Design</h3>
+                <p class="service-description">
+                    Crafting intuitive and engaging user interfaces with a focus on user experience and accessibility
+                    using Figma.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3 class="service-title">Database Optimization</h3>
+                <p class="service-description">
+                    Enhancing database performance through query optimization and efficient data management techniques
+                    using MySQL and Navicate premium.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skill">
+        <h2 class="skill-title">My Skills & Technologies</h2>
+
+        <div class="scroll-container">
+            <div class="scroll-wrapper" id="scrollWrapper">
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>Professional Skills</h2>
+            <div class="circular-skills">
+                <div class="circular-skill" data-percent="90">
+                    <div class="circle-container">
+                        <svg width="150" height="150">
+                            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+                            <circle class="circle-progress" cx="75" cy="75" r="65"></circle>
+                        </svg>
+                        <div class="circle-text">90%</div>
+                    </div>
+                    <div class="skill-label">Team Work</div>
+                </div>
+
+                <div class="circular-skill" data-percent="80">
+                    <div class="circle-container">
+                        <svg width="150" height="150">
+                            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+                            <circle class="circle-progress" cx="75" cy="75" r="65"></circle>
+                        </svg>
+                        <div class="circle-text">80%</div>
+                    </div>
+                    <div class="skill-label">Creativity</div>
+                </div>
+
+                <div class="circular-skill" data-percent="55">
+                    <div class="circle-container">
+                        <svg width="150" height="150">
+                            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+                            <circle class="circle-progress" cx="75" cy="75" r="65"></circle>
+                        </svg>
+                        <div class="circle-text">55%</div>
+                    </div>
+                    <div class="skill-label">Project Management</div>
+                </div>
+
+                <div class="circular-skill" data-percent="75">
+                    <div class="circle-container">
+                        <svg width="150" height="150">
+                            <circle class="circle-bg" cx="75" cy="75" r="65"></circle>
+                            <circle class="circle-progress" cx="75" cy="75" r="65"></circle>
+                        </svg>
+                        <div class="circle-text">75%</div>
+                    </div>
+                    <div class="skill-label">Communication</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-heading reveal">My Portfolio</h2>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="design">Designing</button>
+            <button class="filter-btn" data-filter="coding">Coding</button>
+        </div>
+
+        <div class="portfolio-carousel-wrapper">
+            <!-- DESIGNING CAROUSEL -->
+            <div class="carousel-section" id="design-carousel">
+                <div class="carousel-header">
+                    <div class="carousel-controls">
+                        <button class="carousel-nav-btn prev" data-target="design-track"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-nav-btn next" data-target="design-track"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="carousel-track" id="design-track">
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/lomiees.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/RFj22fyDJfxZtQMBsDJWMU/Lomiees-Clouthing?page-id=0%3A1&node-id=2-2&p=f&viewport=521%2C92%2C0.11&t=o8fevtjkdmaUWwWP-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2%3A2"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="videos/Lomiees Ecommerce Clothing Store.mp4" target="_blank"
+                                    class="github-btn"><i class="fas fa-video"></i> Watch Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Lomiees - Ecommerce Clothing Store</h3>
+                            <p>A visually stunning fashion commerce design focusing on high-end aesthetics, intuitive
+                                filtering, and a seamless mobile-first shopping experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Prototype</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/Seaside.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/gs1b0N74TGOkCdZ0611KfB/Seaside-Queen?page-id=0%3A1&node-id=52-76&p=f&viewport=38%2C357%2C0.39&t=X5as3z1LL0M4K6g2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=172%3A303"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Seaside Queen - Luxury Hotel Booking</h3>
+                            <p>A sophisticated luxury hotel reservation system for coastal Sri Lankan destinations,
+                                featuring seamless room selection and immersive booking experiences.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Prototype</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imgb" src="img/st.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Online Kids Story Book Shelf</h3>
+                            <p>An enchanting digital library designed for children, featuring immersive interactive
+                                storyboards and playful animations.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Visual Design</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/User Creation.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="" target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>User Creation System</h3>
+                            <p>A clean, modern user onboarding interface designed for administrative efficiency and a
+                                frictionless digital entry experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Dashboard UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/photo.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Photographer Portfolio</h3>
+                            <p>A minimalist, image-centric portfolio experience designed to spotlight high-resolution
+                                creative photography.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imgb" src="img/cafe web.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/HujoDsKjzLU9OnmLvM8Cg2/Bean-Cafe?page-id=0%3A1&node-id=263-341&p=f&viewport=31%2C278%2C0.19&t=ly0n5C5zKPXn47KN-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=263%3A341"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="videos/Bean Cafe - Made with Clipchamp.mp4" target="_blank"
+                                    class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Bean Cafe Mobile App</h3>
+                            <p>A premium specialty coffee application focusing on quick navigation and a refined
+                                aesthetic for online ordering.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Mobile UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/Dashboard.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/LBUCvaIMzmohVQldHACg7g/HR-Management-System?page-id=0%3A1&node-id=1-33&p=f&viewport=25%2C122%2C0.08&t=IAZQtN0SVHhkev3i-1&scaling=min-zoom&content-scaling=fixed"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>HR Management Dashboard</h3>
+                            <p>A high-performance enterprise dashboard designed for data clarity and streamlined human
+                                resource monitoring.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Dashboard UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imgb" src="img/Seaside mobile.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/gs1b0N74TGOkCdZ0611KfB/Seaside-Queen?page-id=0%3A1&node-id=52-76&p=f&viewport=38%2C357%2C0.39&t=X5as3z1LL0M4K6g2-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=172%3A303"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Seaside Queen Mobile App</h3>
+                            <p>A high-end travel booking interface designed for seamless itinerary planning and visual
+                                inspiration.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Travel UI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/event.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="https://www.figma.com/proto/xEMEBBAovR3AvQJf9TVD43/Dashboard-Event-Booking---Management-App?page-id=0%3A1&node-id=1-2&p=f&viewport=165%2C350%2C0.16&t=h5T9V7OvwhUolzNj-1&scaling=min-zoom&content-scaling=fixed"
+                                    target="_blank" class="demo-btn"><i class="fab fa-figma"></i> Figma Link</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fas fa-video"></i> Watch
+                                    Video</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Event Management Dashboard</h3>
+                            <p>A high-end travel booking interface designed for seamless itinerary planning and visual
+                                inspiration.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">Travel UI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CODING CAROUSEL -->
+            <div class="carousel-section" id="coding-carousel">
+                <div class="carousel-header">
+                    <div class="carousel-controls">
+                        <button class="carousel-nav-btn prev" data-target="coding-track"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-nav-btn next" data-target="coding-track"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="carousel-track" id="coding-track">
+                    <div class="portfolio-item" data-category="coding">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/lomiess dev.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-commerce Clothing Store</h3>
+                            <p>A robust full-stack retail platform featuring dynamic product filtering and an optimized
+                                checkout experience.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">Full-Stack</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="coding">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/Portfolio.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Personal Portfolio</h3>
+                            <p>A high-performance cinematic portfolio designed to showcase creative and technical
+                                mastery through immersive UX.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">Modern CSS</span>
+                                <span class="tag">Vanilla JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="coding">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/user creation dev.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>User Creation Management</h3>
+                            <p>A functional administrative portal built for secure user provisioning, role-based access
+                                control, and streamlined data integrity.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="coding">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/Entrepreneur.PNG" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Entrepreneur Landing Page</h3>
+                            <p>An enterprise-grade data management solution facilitating seamless tracking and reporting
+                                for entrepreneur networks.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Navicat</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item" data-category="coding">
+                        <div class="portfolio-image">
+                            <img class="imga" src="img/magical task.png" alt="Project image">
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="demo-btn"><i class="fas fa-external-link-alt"></i>
+                                    Live Demo</a>
+                                <a href="#" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub
+                                    Repo</a>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Magical Taskreminder - Chrome Extension</h3>
+                            <p>Taskreminder is a web application that helps you to remember your tasks.</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                                <span class="tag">Json</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2 class="resume-header">My Resume</h2>
+        <div class="resume-container">
+            <div class="sidebar">
+                <button class="sidebar-button active" data-section="education">
+                    <div class="icon-container">🎓</div>
+                    <span class="button-label">Education</span>
+                </button>
+
+                <button class="sidebar-button" data-section="certifications">
+                    <div class="icon-container">📜</div>
+                    <span class="button-label">Certifications</span>
+                </button>
+
+                <button class="sidebar-button" data-section="experiences">
+                    <div class="icon-container">💼</div>
+                    <span class="button-label">Experiences</span>
+                </button>
+            </div>
+
+            <div class="content-area">
+                <!-- EDUCATION SECTION -->
+                <div class="content-section active" id="education">
+                    <h2 class="education-header">🎓 Education</h2>
+
+                    <div class="cards-container" id="cardsContainer">
+                        <div class="cards-wrapper" id="cardsWrapper">
+                            <div class="education-card">
+                                <div class="degree">
+                                    <span class="degree-icon">🎓</span>
+                                    <span>Diploma in Software Engineering</span>
+                                </div>
+                                <div class="institution">National Apprentice and Industrial Training Authority</div>
+                                <span class="duration">2023 - 2024</span>
+                                <div class="description">
+                                    Comprehensive program covering software development lifecycle, programming
+                                    languages, database management, mobile development, designing and web technologies.
+                                    Completed with distinction.
+                                </div>
+                                <div class="skills">
+                                    <span class="skill-tag">Software Engineering</span>
+                                    <span class="skill-tag">Mobile Development</span>
+                                    <span class="skill-tag">Database Systems</span>
+                                    <span class="skill-tag">Web Development</span>
+                                    <span class="skill-tag">UI/UX Design</span>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="degree">
+                                    <span class="degree-icon">💊</span>
+                                    <span>Foundation in Pharmaceutical Studies</span>
+                                </div>
+                                <div class="institution">IMHS Campus</div>
+                                <span class="duration">2022 - 2023</span>
+                                <div class="description">
+                                    Studied core subjects in pharmaceutical sciences including pharmacology, medicinal
+                                    chemistry, pharmaceutics, and pharmacy practice. Gained foundational knowledge for a
+                                    career in healthcare and pharmaceuticals.
+                                </div>
+                                <div class="skills">
+                                    <span class="skill-tag">Knowledge of Medicine</span>
+                                    <span class="skill-tag">Prescription Reading</span>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="degree">
+                                    <span class="degree-icon">💻</span>
+                                    <span>Diploma in ICT</span>
+                                </div>
+                                <div class="institution">ICBT Campus</div>
+                                <span class="duration">2021 - 2022</span>
+                                <div class="description">
+                                    Covered fundamental concepts in information technology including programming,
+                                    networking, database management, web development, and system analysis. Developed
+                                    practical skills for IT careers.
+                                </div>
+                                <div class="skills">
+                                    <span class="skill-tag">Hardware Troubleshooting</span>
+                                    <span class="skill-tag">Network</span>
+                                    <span class="skill-tag">Web Designing</span>
+                                    <span class="skill-tag">Database Management</span>
+                                </div>
+                            </div>
+
+                            <div class="education-card">
+                                <div class="degree">
+                                    <span class="degree-icon">🗣️</span>
+                                    <span>Diploma in English</span>
+                                </div>
+                                <div class="institution">ICBT Campus</div>
+                                <span class="duration">2021 - 2022</span>
+                                <div class="description">
+                                    Focused on enhancing English language skills including reading, writing, speaking,
+                                    and listening. Prepared for academic and professional communication in
+                                    English-speaking environments.
+                                </div>
+                                <div class="skills">
+                                    <span class="skill-tag">Speaking</span>
+                                    <span class="skill-tag">Listening</span>
+                                    <span class="skill-tag">Writing</span>
+                                    <span class="skill-tag">Reading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="scroll-indicator">
+                        ← Move your cursor to scroll →
+                    </div>
+                </div>
+
+                <!-- CERTIFICATIONS SECTION -->
+                <div class="content-section" id="certifications">
+                    <h2 class="certification-header">📜 Certifications</h2>
+
+                    <div class="certifications-wrapper">
+                        <button class="carousel-nav-btn prev" data-target="certTrack"><i class="fas fa-chevron-left"></i></button>
+                        <button class="carousel-nav-btn next" data-target="certTrack"><i class="fas fa-chevron-right"></i></button>
+
+                        <div class="certifications-carousel" id="certTrack">
+                                <!-- Cloud Computing -->
+                                <div class="cert-card">
+                                    <div class="cert-image-area">
+                                        <i class="fas fa-cloud"></i>
+                                    </div>
+                                    <div class="cert-content">
+                                        <h3 class="cert-title">Cloud Computing Fundamentals</h3>
+                                        <div class="cert-issuer">IBM | Coursera &bull; Mar 7, 2026</div>
+                                        <p class="cert-description">Learned fundamental concepts of cloud computing, including service models (IaaS, PaaS, SaaS) and deployment strategies.</p>
+                                        <div class="cert-skills">
+                                            <span class="cert-skill-tag">Cloud Architecture</span>
+                                            <span class="cert-skill-tag">AWS</span>
+                                            <span class="cert-skill-tag">Virtualization</span>
+                                        </div>
+                                        <a href="Certificates/Cloud%20Computing.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                                    </div>
+                                </div>
+
+                                <!-- Prompt Engineering -->
+                                <div class="cert-card">
+                                    <div class="cert-image-area">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="cert-content">
+                                        <h3 class="cert-title">Generative AI: Prompt Engineering</h3>
+                                        <div class="cert-issuer">Coursera &bull; Feb 9, 2026</div>
+                                        <p class="cert-description">Explored advanced prompt engineering techniques to optimize interactions with LLMs and AI models.</p>
+                                        <div class="cert-skills">
+                                            <span class="cert-skill-tag">Prompt Engineering</span>
+                                            <span class="cert-skill-tag">AI</span>
+                                            <span class="cert-skill-tag">LLMs</span>
+                                        </div>
+                                        <a href="Certificates/Prompt%20Engineering.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                                    </div>
+                                </div>
+
+                                <!-- Git -->
+                                <div class="cert-card">
+                                    <div class="cert-image-area">
+                                        <i class="fab fa-git-alt"></i>
+                                    </div>
+                                    <div class="cert-content">
+                                        <h3 class="cert-title">Version Control with Git</h3>
+                                        <div class="cert-issuer">IBM | Coursera &bull; Dec 14, 2025</div>
+                                        <p class="cert-description">Mastered version control systems, branching strategies, and collaborative development using Git and GitHub.</p>
+                                        <div class="cert-skills">
+                                            <span class="cert-skill-tag">Git</span>
+                                            <span class="cert-skill-tag">GitHub</span>
+                                            <span class="cert-skill-tag">Collaboration</span>
+                                        </div>
+                                        <a href="Certificates/Git.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                                    </div>
+                                </div>
+
+                                <!-- IBM Web Dev -->
+                                <div class="cert-card">
+                                    <div class="cert-image-area">
+                                        <i class="fas fa-code"></i>
+                                    </div>
+                                    <div class="cert-content">
+                                        <h3 class="cert-title">Introduction to HTML, CSS & JavaScript</h3>
+                                        <div class="cert-issuer">IBM | Coursera &bull; Oct 27, 2025</div>
+                                        <p class="cert-description">Comprehensive foundation in web development technologies for building modern, responsive user interfaces.</p>
+                                        <div class="cert-skills">
+                                            <span class="cert-skill-tag">HTML5</span>
+                                            <span class="cert-skill-tag">CSS3</span>
+                                            <span class="cert-skill-tag">JavaScript</span>
+                                        </div>
+                                        <a href="Certificates/HTML.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                                    </div>
+                                </div>
+
+                                <!-- Software Engineering -->
+                                <div class="cert-card">
+                                    <div class="cert-image-area">
+                                        <i class="fas fa-laptop-code"></i>
+                                    </div>
+                                    <div class="cert-content">
+                                        <h3 class="cert-title">Introduction to Software Engineering</h3>
+                                        <div class="cert-issuer">IBM | Coursera &bull; Aug 22, 2025</div>
+                                        <p class="cert-description">Learned software development life cycles (SDLC), Agile methodologies, and architectural design principles.</p>
+                                        <div class="cert-skills">
+                                            <span class="cert-skill-tag">SDLC</span>
+                                            <span class="cert-skill-tag">Agile</span>
+                                            <span class="cert-skill-tag">Systems Design</span>
+                                        </div>
+                                        <a href="Certificates/Software%20Engineering.pdf" target="_blank" class="view-cert-btn">View Certificate</a>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="scroll-indicator">
+                        ← Swipe or use buttons to scroll →
+                    </div>
+                </div>
+
+                <!-- EXPERIENCES SECTION -->
+                <div class="content-section" id="experiences">
+                    <h2 class="certification-header">💼 Professional Experience</h2>
+
+                    <div class="timelines">
+                        <div class="timeline-items">
+                            <div class="timeline-dots"></div>
+                            <div class="content">
+                                <h3 class="job-title">Freelancer</h3>
+                                <div class="company"></div>
+                                <div class="date">June 2025 - Present</div>
+                                <p class="description">
+                                    Led the development of responsive web applications using React and modern JavaScript
+                                    frameworks. Collaborated with cross-functional teams to deliver high-quality
+                                    solutions.
+                                </p>
+                                <div class="skillsa">
+                                    <span class="skill-taga">React</span>
+                                    <span class="skill-taga">TypeScript</span>
+                                    <span class="skill-taga">HTML</span>
+                                    <span class="skill-taga">CSS</span>
+                                    <span class="skill-taga">JavaScript</span>
+                                    <span class="skill-taga">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-items">
+                            <div class="timeline-dots"></div>
+                            <div class="content">
+                                <h3 class="job-title">Web Development Intern</h3>
+                                <div class="company">Regional Development Bank - Head Office</div>
+                                <div class="date">Nov 2024 - Jun 2025</div>
+                                <p class="description">
+                                    Gained hands-on experience in web development. Contributed to various projects and
+                                    learned industry best practices.
+                                </p>
+                                <div class="skillsa">
+                                    <span class="skill-taga">HTML5</span>
+                                    <span class="skill-taga">CSS3</span>
+                                    <span class="skill-taga">JavaScript</span>
+                                    <span class="skill-taga">Bootstrap</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-items">
+                            <div class="timeline-dots"></div>
+                            <div class="content">
+                                <h3 class="job-title">UI/UX Developer Intern</h3>
+                                <div class="company">Regional Development Bank - Head Office</div>
+                                <div class="date">Nov 2024 - June 2025</div>
+                                <p class="description">
+                                    Led the designing of responsive web applications using Figma. Collaborated with
+                                    cross-functional teams to deliver high-quality solutions.
+                                </p>
+                                <div class="skillsa">
+                                    <span class="skill-taga">Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">Get Touch With Me</h2>
+                <p>Have a project in mind or just want to chat? Feel free to reach out!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Me</h3>
+                        <p>Drop me a line anytime</p>
+                        <a href="mailto:sadasimalsha@gmail.com">sadasimalsha@gmail.com</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Me</h3>
+                        <p>Contact me anytime</p>
+                        <a href="tel:+94742949504">+94 74 294 9504</a>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Galle, Sri Lanka</p>
+                        <p style="margin-top: 5px;">Available for remote work worldwide</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mqaeewge" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Project Inquiry">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Tell me about your project..."></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="home-icon" onclick="scrollToTop()">
+        <i class="fas fa-home"></i>
+    </div>
+
+    <footer>
+        <div class="social-media">
+            <a href="mailto:sadasimalsha@gmail.com" class="socials">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="#" class="socials">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="#" class="socials">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="tel:+94742949504" class="socials">
+                <i class="fas fa-phone"></i>
+            </a>
+        </div>
+        <p>
+            &copy; 2025 Shashini Rathnayake. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+        var typed = new Typed('#typed', { strings: ["UI / UX Designer", "Fullstack Developer"], typeSpeed: 80, backSpeed: 50, loop: true });
+
+        const technologies = [
+            { name: 'HTML5', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+            { name: 'CSS3', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+            { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+            { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+            { name: 'Node.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+            { name: 'Figma', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
+            { name: 'Java', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+            { name: 'Python', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+            { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+            { name: 'Git', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+            { name: 'TypeScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+            { name: 'Angular', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+            { name: 'Kotlin', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' }
+        ];
+
+        const scrollWrapper = document.getElementById('scrollWrapper');
+
+        function createTechItem(tech) {
+            return `
+            <div class="tech-item">
+                <div class="logo-container">
+                    <img src="${tech.logo}" alt="${tech.name}">
+                </div>
+                <span class="tech-name">${tech.name}</span>
+            </div>
+        `;
+        }
+
+        const techHTML = technologies.map(tech => createTechItem(tech)).join('');
+        scrollWrapper.innerHTML = techHTML + techHTML;
+
+        const circularSkills = document.querySelectorAll('.circular-skill');
+        circularSkills.forEach(skill => {
+            const percent = skill.getAttribute('data-percent');
+            const circle = skill.querySelector('.circle-progress');
+            const circumference = 408;
+            const offset = circumference - (percent / 100) * circumference;
+
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 100);
+        });
+
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const designCarousel = document.getElementById('design-carousel');
+        const codingCarousel = document.getElementById('coding-carousel');
+
+        // Initialize view: Show only design by default
+        codingCarousel.style.display = 'none';
+        portfolioItems.forEach(item => {
+            if (item.dataset.category !== 'design') item.classList.add('hide');
+        });
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                if (filter === 'design') {
+                    designCarousel.style.display = 'block';
+                    codingCarousel.style.display = 'none';
+                    portfolioItems.forEach(item => {
+                        if (item.dataset.category === 'design') item.classList.remove('hide');
+                        else item.classList.add('hide');
+                    });
+                } else if (filter === 'coding') {
+                    designCarousel.style.display = 'none';
+                    codingCarousel.style.display = 'block';
+                    portfolioItems.forEach(item => {
+                        if (item.dataset.category === 'coding') item.classList.remove('hide');
+                        else item.classList.add('hide');
+                    });
+                }
+            });
+        });
+
+        // Carousel logic will be handled below in the unified handler
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        const navbar = document.getElementById('navbar');
+        const handleScroll = () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        };
+
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            const form = e.target;
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalText = submitBtn.innerHTML;
+
+            submitBtn.innerHTML = '<span>Sending...</span> <i class="fas fa-spinner fa-spin"></i>';
+            submitBtn.disabled = true;
+
+            const data = new FormData(form);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    submitBtn.innerHTML = '<span>Message Sent!</span> <i class="fas fa-check"></i>';
+                    form.reset();
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    }, 3000);
+                } else {
+                    const result = await response.json();
+                    if (Object.hasOwn(result, 'errors')) {
+                        alert(result["errors"].map(error => error["message"]).join(", "));
+                    } else {
+                        alert("Oops! There was a problem submitting your form");
+                    }
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                alert("Oops! There was a problem submitting your form");
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        const infoCards = document.querySelectorAll('.info-card');
+        infoCards.forEach((card, index) => {
+            card.style.animation += `, float 3s ease-in-out infinite ${index * 0.2}s`;
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+    `;
+        document.head.appendChild(style);
+
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        // (Old cursor code removed - using .cursor-dot and .cursor-outline instead)
+
+        window.addEventListener('scroll', handleScroll);
+
+
+        // UNIFIED CAROUSEL LOGIC
+        function initCarousels() {
+            console.log("Carousel System: Initializing...");
+            
+            const setupDrag = (trackId) => {
+                const track = document.getElementById(trackId);
+                if (!track) return;
+
+                let isDown = false;
+                let startX;
+                let scrollLeft;
+                let moved = false;
+
+                track.addEventListener('wheel', (e) => {
+                    if (e.deltaY !== 0) {
+                        e.preventDefault();
+                        track.scrollLeft += e.deltaY;
+                    }
+                }, { passive: false });
+
+                track.addEventListener('mousedown', (e) => {
+                    isDown = true;
+                    moved = false;
+                    startX = e.pageX - track.offsetLeft;
+                    scrollLeft = track.scrollLeft;
+                    
+                    // Disable snapping and smoothing during drag to prevent jitter
+                    track.style.scrollSnapType = 'none';
+                    track.style.scrollBehavior = 'auto';
+                });
+
+                const endDrag = () => {
+                    if (!isDown) return;
+                    isDown = false;
+                    // Re-enable snapping and smoothing
+                    track.style.scrollSnapType = 'x mandatory';
+                    track.style.scrollBehavior = 'smooth';
+                };
+
+                track.addEventListener('mouseleave', endDrag);
+                track.addEventListener('mouseup', endDrag);
+
+                track.addEventListener('mousemove', (e) => {
+                    if (!isDown) return;
+                    e.preventDefault();
+                    const x = e.pageX - track.offsetLeft;
+                    const walk = (x - startX) * 2;
+                    if (Math.abs(walk) > 5) moved = true;
+                    track.scrollLeft = scrollLeft - walk;
+                });
+
+                // Prevent links from firing if we were dragging
+                track.addEventListener('click', (e) => {
+                    if (moved) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                    }
+                }, true);
+            };
+
+            // Initialize all tracks
+            ['design-track', 'coding-track', 'certTrack'].forEach(setupDrag);
+
+            // Direct click handlers on carousel nav buttons (most reliable)
+            document.querySelectorAll('.carousel-nav-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const targetId = btn.getAttribute('data-target');
+                    const track = document.getElementById(targetId);
+                    if (!track) return;
+                    const step = track.classList.contains('certifications-carousel') ? 380 : 420;
+                    const dir = btn.classList.contains('next') ? 1 : -1;
+                    track.scrollBy({ left: step * dir, behavior: 'smooth' });
+                });
+            });
+
+            // Fallback: Button Click Logic using Event Delegation
+            document.addEventListener('click', (e) => {
+                const btn = e.target.closest('.carousel-nav-btn');
+                if (!btn) return;
+                
+                e.preventDefault();
+                const targetId = btn.getAttribute('data-target');
+                const track = document.getElementById(targetId);
+                if (!track) return;
+                
+                const step = track.classList.contains('certifications-carousel') ? 380 : 420;
+                const dir = btn.classList.contains('next') ? 1 : -1;
+                
+                track.scrollBy({ left: step * dir, behavior: 'smooth' });
+            });
+        }
+
+        // Run initialization
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initCarousels);
+        } else {
+            initCarousels();
+        }
+
+        // Sidebar Navigation Logic
+        window.addEventListener('DOMContentLoaded', function () {
+            const sidebarButtons = document.querySelectorAll('.sidebar-button');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            sidebarButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetSection = this.getAttribute('data-section');
+                    sidebarButtons.forEach(btn => btn.classList.remove('active'));
+                    contentSections.forEach(section => section.classList.remove('active'));
+
+                    this.classList.add('active');
+                    const sectionToShow = document.getElementById(targetSection);
+                    if (sectionToShow) sectionToShow.classList.add('active');
+                });
+            });
+        });
+
+        document.querySelectorAll('.timeline-items').forEach(item => {
+            item.addEventListener('click', function () {
+                this.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 200);
+            });
+        });
+
+        const cursorDot = document.querySelector(".cursor-dot");
+        const cursorOutline = document.querySelector(".cursor-outline");
+
+        window.addEventListener("mousemove", function (e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.animate({
+                left: `${posX}px`,
+                top: `${posY}px`
+            }, { duration: 500, fill: "forwards" });
+        });
+
+        // Robust Cursor Hover Effects using Event Delegation
+        document.addEventListener('mouseover', (e) => {
+            const interactive = e.target.closest('a, button, .portfolio-item, .tech-item, .cert-card, .education-card, .carousel-nav-btn, .sidebar-button, .color-dot');
+            if (interactive) {
+                cursorDot.classList.add('active');
+                cursorOutline.classList.add('active');
+            } else {
+                cursorDot.classList.remove('active');
+                cursorOutline.classList.remove('active');
+            }
+        });
+
+        // Enhanced Scroll Reveal
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // --- Button Glow Logic ---
+        const glowButtons = document.querySelectorAll('.hero-btn, .btn, .filter-btn, .demo-btn, .github-btn');
+        glowButtons.forEach(btn => {
+            btn.addEventListener('mousemove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                btn.style.setProperty('--x', `${x}px`);
+                btn.style.setProperty('--y', `${y}px`);
+            });
+        });
+
+        // --- Contact Form Handling ---
+        const contactForm = document.getElementById('contactForm');
+        const successToast = document.getElementById('successToast');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                // Simulate sending
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.style.pointerEvents = 'none';
+
+                setTimeout(() => {
+                    submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+                    successToast.classList.add('active');
+                    contactForm.reset();
+
+                    setTimeout(() => {
+                        successToast.classList.remove('active');
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.style.pointerEvents = 'all';
+                    }, 4000);
+                }, 1500);
+            });
+        }
+
+        // --- Project Case Study Modal Logic ---
+        const projectData = {
+            "Lomiees - Ecommerce Clothing Store": {
+                problem: "The client needed a high-conversion fashion platform that wouldn't feel like a template. Key challenges included maintaining high performance with large images and ensuring a seamless mobile experience.",
+                solution: "I designed a bespoke UI in Figma focusing on minimalist luxury. The final prototype features optimized image loading, intuitive gesture navigation for mobile, and a cinematic product showcase.",
+                colors: ["#6366f1", "#4f46e5", "#0f172a", "#ffffff", "#f59e0b"],
+                actions: [
+                    { label: "Figma Link", url: "#", icon: "fab fa-figma" },
+                    { label: "Watch Video", url: "#", icon: "fas fa-video" }
+                ]
+            },
+            "Online Hotel Booking App": {
+                problem: "Most booking apps feel cluttered. The challenge was to simplify complex filtering for luxury travelers while maintaining a premium aesthetic.",
+                solution: "I implemented a 'search-first' interface with smooth transitions between listing and detail views. Used high-contrast typography and subtle glassmorphism to highlight essential booking actions.",
+                colors: ["#3b82f6", "#1e293b", "#ffffff"],
+                actions: [
+                    { label: "Figma Link", url: "#", icon: "fab fa-figma" },
+                    { label: "Watch Video", url: "#", icon: "fas fa-video" }
+                ]
+            },
+            "User Creation Management": {
+                problem: "Administrative dashboards often sacrifice usability for functionality. The goal was to make complex user provisioning feel simple and error-proof.",
+                solution: "Built a centralized management portal with role-based access control. Used a clean data-table approach with inline editing and instant validation to improve efficiency by 40%.",
+                colors: ["#10b981", "#0f172a", "#ffffff"],
+                actions: [
+                    { label: "Live Demo", url: "#", icon: "fas fa-external-link-alt" },
+                    { label: "GitHub Repo", url: "#", icon: "fab fa-github" }
+                ]
+            }
+        };
+
+        const modal = document.getElementById('projectModal');
+        const closeModal = document.getElementById('closeModal');
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const title = item.querySelector('h3').innerText;
+                const data = projectData[title] || {
+                    problem: "Information for this project is being updated.",
+                    solution: "Stay tuned for the detailed case study appearing soon!",
+                    colors: ["#6366f1", "#8b5cf6"],
+                    actions: []
+                };
+
+                document.getElementById('modalTitle').innerText = title;
+                document.getElementById('modalImg').src = item.querySelector('img').src;
+                document.getElementById('modalProblem').innerText = data.problem;
+                document.getElementById('modalSolution').innerText = data.solution;
+
+                const tagsContainer = document.getElementById('modalTags');
+                tagsContainer.innerHTML = item.querySelector('.portfolio-tags').innerHTML;
+
+                const colorsContainer = document.getElementById('modalColors');
+                colorsContainer.innerHTML = '';
+                data.colors.forEach(color => {
+                    const dot = document.createElement('div');
+                    dot.classList.add('color-dot');
+                    dot.style.backgroundColor = color;
+                    colorsContainer.appendChild(dot);
+                });
+
+                const actionsContainer = document.getElementById('modalActions');
+                actionsContainer.innerHTML = '';
+                // Get existing buttons from the card to populate modal actions
+                const cardLinks = item.querySelectorAll('.project-links a');
+                cardLinks.forEach(link => {
+                    const clone = link.cloneNode(true);
+                    // Preserve original classes from the card (demo-btn or github-btn)
+                    actionsContainer.appendChild(clone);
+                });
+
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                cursorDot.classList.remove('active');
+                cursorOutline.classList.remove('active');
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'all';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'all';
+            }
+        });
+
+        // Existing Observer for timeline (if any)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-items').forEach(item => {
+            observer.observe(item);
+        });
+
+    </script>
+</body>
+
+</html>
